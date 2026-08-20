@@ -107,12 +107,13 @@ export const CheckoutView: React.FC = () => {
         <div className="max-w-3xl mx-auto bg-white p-8 sm:p-12 rounded-3xl border border-[#D8C9AE] shadow-xl space-y-8 print:border-none print:shadow-none">
           {/* Header Banner */}
           <div className="text-center space-y-3 pb-8 border-b border-[#E8DFCF]">
-            <div className="w-16 h-16 bg-[#8A9A83]/20 text-[#8A9A83] rounded-full flex items-center justify-center mx-auto mb-2 animate-bounce">
-              <CheckCircle2 className="w-10 h-10" />
+            <div className="flex justify-center mb-2">
+              <PearlessenceLogo variant="badge" size="lg" theme="dark" />
             </div>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-[#B49B73] font-semibold">
-              Craftsmanship Initiated
-            </span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#8A9A83]/20 text-[#42683B] rounded-full text-xs font-bold uppercase tracking-wider">
+              <CheckCircle2 className="w-4 h-4 text-[#42683B]" />
+              <span>Craftsmanship Initiated</span>
+            </div>
             <h1 className="font-editorial text-3xl sm:text-4xl font-medium text-[#111010]">
               Thank You for Your Order
             </h1>

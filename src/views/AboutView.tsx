@@ -12,8 +12,8 @@ export const AboutView: React.FC = () => {
       {/* Editorial Hero */}
       <section className="bg-[#111010] text-[#FAF8F4] py-20 px-4 sm:px-6 lg:px-8 border-b border-[#B49B73]/30">
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <div className="flex justify-center mb-2">
-            <PearlessenceLogo variant="badge" size="lg" theme="light" />
+          <div className="flex justify-center mb-4">
+            <PearlessenceLogo variant="badge" size="xl" theme="dark" />
           </div>
           <span className="text-[11px] uppercase tracking-[0.25em] text-[#B49B73] font-semibold">
             Modest • Luxe • Timeless • Soft Elegance

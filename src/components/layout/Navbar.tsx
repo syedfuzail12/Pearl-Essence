@@ -17,6 +17,7 @@ import {
 import { useStore, ViewType } from '../../context/StoreContext';
 import { CATEGORIES } from '../../data/mockData';
 import { FabricCategory } from '../../types';
+import { PearlessenceLogo } from '../brand/Logo';
 
 export const Navbar: React.FC = () => {
   const {
@@ -95,19 +96,9 @@ export const Navbar: React.FC = () => {
 
               <button
                 onClick={() => handleNavClick('home')}
-                className="flex items-center gap-2.5 group cursor-pointer text-left"
+                className="flex items-center group cursor-pointer text-left focus:outline-hidden"
               >
-                <div className="w-9 h-9 rounded-xl bg-[#111010] flex items-center justify-center shadow-xs group-hover:bg-[#222] transition-colors">
-                  <span className="text-[#FAF8F4] font-montserrat font-black text-lg">P</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-montserrat font-black text-xl sm:text-2xl tracking-[0.22em] text-[#111010] uppercase leading-none">
-                    PEARLESSENCE
-                  </span>
-                  <span className="font-montserrat font-bold text-[9px] tracking-[0.28em] text-[#8C7F72] uppercase mt-1">
-                    Bangalore Atelier
-                  </span>
-                </div>
+                <PearlessenceLogo variant="horizontal" theme="dark" />
               </button>
             </div>
 

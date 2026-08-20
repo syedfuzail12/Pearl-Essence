@@ -111,9 +111,7 @@ export const AuthModal: React.FC = () => {
         {/* Modal Header */}
         <div className="bg-[#111010] text-[#FAF8F4] p-6 text-center border-b border-[#B49B73]/30 font-manrope">
           <div className="flex justify-center mb-3">
-            <div className="w-12 h-12 bg-[#FAF8F4] rounded-2xl flex items-center justify-center shadow-inner font-manrope font-black text-2xl text-[#111010]">
-              P
-            </div>
+            <PearlessenceLogo variant="badge" size="lg" theme="dark" />
           </div>
           <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-[#F5F1E8]">
             {currentUser ? 'Client Dossier' : isSignUp ? 'Create Client Account' : 'Sign In to Pearlessence'}

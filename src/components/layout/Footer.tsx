@@ -70,9 +70,9 @@ export const Footer: React.FC = () => {
           {/* Brand & Story (Col 1 & 2) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <PearlessenceLogo variant="badge" size="sm" theme="light" />
+              <PearlessenceLogo variant="badge" size="md" theme="dark" />
               <div className="flex flex-col">
-                <span className="font-montserrat text-xl font-black tracking-[0.24em] text-[#F5F1E8] uppercase">
+                <span className="font-manrope text-xl font-black tracking-[0.24em] text-[#F5F1E8] uppercase">
                   PEARLESSENCE
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.22em] text-[#B49B73] font-bold">

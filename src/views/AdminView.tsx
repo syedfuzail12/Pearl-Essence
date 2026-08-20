@@ -28,6 +28,7 @@ import {
 import { useStore } from '../context/StoreContext';
 import { formatPrice, formatDate } from '../utils/formatters';
 import { BRAND_DETAILS, CATEGORIES } from '../data/mockData';
+import { PearlessenceLogo } from '../components/brand/Logo';
 import { Order, Product, CustomisationEnquiry, FabricCategory } from '../types';
 
 export const AdminView: React.FC = () => {
@@ -80,8 +81,8 @@ export const AdminView: React.FC = () => {
       <div className="min-h-[80vh] bg-[#FAF8F4] flex items-center justify-center p-4">
         <div className="bg-[#111010] text-[#FAF8F4] w-full max-w-md p-8 sm:p-10 rounded-3xl border border-[#B49B73]/40 shadow-2xl space-y-6">
           <div className="text-center space-y-2">
-            <div className="w-14 h-14 rounded-full bg-[#3A3733] border border-[#B49B73]/60 flex items-center justify-center mx-auto text-[#B49B73]">
-              <Lock className="w-7 h-7" />
+            <div className="flex justify-center mb-3">
+              <PearlessenceLogo variant="badge" size="lg" theme="dark" />
             </div>
             <span className="text-[10px] tracking-[0.3em] uppercase text-[#B49B73] font-semibold block">
               Confidential Access
@@ -198,9 +199,7 @@ export const AdminView: React.FC = () => {
       <div className="bg-[#111010] text-[#FAF8F4] border-b border-[#3A3733] px-4 sm:px-8 py-5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#B49B73] text-[#111010] flex items-center justify-center font-bold font-serif text-lg">
-              P
-            </div>
+            <PearlessenceLogo variant="badge" size="sm" theme="dark" />
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-editorial text-lg text-[#F5F1E8] font-bold">

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pearlessence3DPearl" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="20%" stop-color="#FAF8F5" />
+      <stop offset="45%" stop-color="#E5DFD5" />
+      <stop offset="70%" stop-color="#C4B9AA" />
+      <stop offset="90%" stop-color="#968B7A" />
+      <stop offset="100%" stop-color="#6E6455" />
+    </radialGradient>
+    <radialGradient id="pearlessenceMiniPearl" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#F5EFEB" />
+      <stop offset="70%" stop-color="#C5BAAA" />
+      <stop offset="100%" stop-color="#807565" />
+    </radialGradient>
+    <filter id="pearlShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="1" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+  <circle cx="250" cy="250" r="248" fill="#0B0B0B" />
+  <g fill="#FFFFFF">
+    <path d="M 194 108 L 250 108 C 248 114 246 117 236 118 L 236 122 L 236 298 L 236 302 C 246 303 248 306 250 312 L 194 312 C 196 306 198 303 208 302 L 208 298 L 208 122 L 208 118 C 198 117 196 114 194 108 Z" />
+    <rect x="208" y="118" width="28" height="180" />
+    <path d="M 234 108 C 275 108 332 120 332 168 C 332 216 275 226 234 226 L 234 218 C 265 218 304 210 304 168 C 304 126 265 116 234 116 Z" />
+  </g>
+  <g stroke="#FFFFFF" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 226 280 C 180 260 166 200 246 150 C 215 190 205 240 226 280 Z" fill="none" stroke="#FFFFFF" stroke-width="3.2" />
+    <path d="M 222 265 C 195 220 215 180 246 150" stroke-width="2.2" />
+    <path d="M 224 235 C 230 265 240 286 286 286 C 308 286 312 265 292 245" stroke-width="3.2" fill="none" />
+  </g>
+  <g filter="url(#pearlShadow)">
+    <circle cx="288" cy="254" r="19" fill="url(#pearlessence3DPearl)" />
+    <ellipse cx="282" cy="248" rx="5" ry="3.5" fill="#FFFFFF" opacity="0.85" transform="rotate(-30 282 248)" />
+  </g>
+  <text x="250" y="362" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', 'Didot', 'Bodoni MT', 'Manrope', serif" font-size="26" font-weight="500" letter-spacing="9" fill="#FFFFFF">PEARLESSENCE</text>
+  <line x1="145" y1="394" x2="236" y2="394" stroke="#E8DFCF" stroke-width="1.2" />
+  <line x1="264" y1="394" x2="355" y2="394" stroke="#E8DFCF" stroke-width="1.2" />
+  <circle cx="250" cy="394" r="6" fill="url(#pearlessenceMiniPearl)" filter="url(#pearlShadow)" />
+</svg>
