@@ -326,21 +326,24 @@ export const Navbar: React.FC = () => {
 
               {/* Account / User */}
               {currentUser ? (
-                <div className="hidden sm:flex items-center gap-1.5 bg-[#E8DFCF] p-1 rounded-xl">
+                <div className="flex items-center gap-1 bg-[#E8DFCF] p-0.5 sm:p-1 rounded-xl">
                   <button
                     onClick={() => handleNavClick('account')}
-                    className="flex items-center gap-1.5 py-1.5 px-2.5 hover:bg-[#D8C9AE] text-[#111010] text-xs font-bold rounded-lg transition-colors cursor-pointer"
+                    className="flex items-center gap-1.5 py-1.5 px-2 sm:px-2.5 hover:bg-[#D8C9AE] text-[#111010] text-xs font-bold rounded-lg transition-colors cursor-pointer"
                     title="View Account Dossier"
+                    aria-label="Account Dossier"
                   >
                     <User className="w-3.5 h-3.5 text-[#B49B73]" />
-                    <span>{(currentUser.name || currentUser.fullName || 'Client').split(' ')[0]}</span>
+                    <span className="hidden sm:inline">
+                      {(currentUser.name || currentUser.fullName || 'Client').split(' ')[0]}
+                    </span>
                   </button>
                   <button
                     onClick={() => {
                       logoutUser();
                       handleNavClick('home');
                     }}
-                    className="p-1.5 hover:bg-[#FAF8F4] text-[#8C7F72] hover:text-[#B5654F] rounded-lg transition-colors cursor-pointer"
+                    className="hidden sm:flex p-1.5 hover:bg-[#FAF8F4] text-[#8C7F72] hover:text-[#B5654F] rounded-lg transition-colors cursor-pointer"
                     title="Sign Out"
                   >
                     <LogOut className="w-3.5 h-3.5" />
@@ -349,10 +352,12 @@ export const Navbar: React.FC = () => {
               ) : (
                 <button
                   onClick={() => setAuthModalOpen(true)}
-                  className="hidden sm:flex items-center gap-1.5 py-2 px-3 hover:bg-[#E8DFCF] text-[#111010] text-xs font-bold rounded-xl transition-colors cursor-pointer"
+                  className="flex items-center gap-1.5 p-2 sm:py-2 sm:px-3 hover:bg-[#E8DFCF] text-[#111010] text-xs font-bold rounded-xl transition-colors cursor-pointer"
+                  title="Sign In / Register"
+                  aria-label="Sign In or Register"
                 >
-                  <User className="w-3.5 h-3.5 text-[#8C7F72]" />
-                  <span>Sign In</span>
+                  <User className="w-4 h-4 text-[#111010]" />
+                  <span className="hidden sm:inline">Sign In</span>
                 </button>
               )}
 
