@@ -12,10 +12,10 @@ export const WhatsAppButton: React.FC = () => {
   const waUrl = generateWhatsAppLink({ enquiryType: 'bespoke' });
 
   return (
-    <div className="fixed bottom-8 right-6 sm:right-8 z-50 flex flex-col items-end">
+    <div className="fixed bottom-5 sm:bottom-8 right-4 sm:right-8 z-40 flex flex-col items-end">
       {/* Detailed Accordion Prompt (Expandable) */}
       {showTooltip && (
-        <div className="bg-[#111010] text-[#FAF8F4] p-4 rounded-2xl shadow-2xl border border-[#B49B73]/40 text-xs font-sans-ui max-w-xs mb-3 animate-in fade-in slide-in-from-bottom-2 duration-300">
+        <div className="bg-[#111010] text-[#FAF8F4] p-4 rounded-2xl shadow-2xl border border-[#B49B73]/40 text-xs font-sans-ui w-[calc(100vw-2rem)] max-w-xs mb-3 animate-in fade-in slide-in-from-bottom-2 duration-300">
           <div className="flex items-center justify-between pb-2 border-b border-[#3A3733]">
             <span className="font-editorial text-sm font-semibold tracking-wide text-[#E8DFCF] flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-[#B49B73]" />
@@ -23,7 +23,7 @@ export const WhatsAppButton: React.FC = () => {
             </span>
             <button
               onClick={() => setShowTooltip(false)}
-              className="text-[#D8C9AE] hover:text-[#FAF8F4] p-0.5"
+              className="text-[#D8C9AE] hover:text-[#FAF8F4] p-0.5 cursor-pointer"
             >
               <X className="w-3.5 h-3.5" />
             </button>
@@ -35,7 +35,7 @@ export const WhatsAppButton: React.FC = () => {
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-block text-center w-full py-2 px-3 bg-[#E8DFCF] text-[#111010] text-[11px] font-semibold tracking-wider uppercase rounded-lg hover:bg-[#FAF8F4] transition-colors"
+            className="mt-3 inline-block text-center w-full py-2.5 px-3 bg-[#E8DFCF] text-[#111010] text-[11px] font-bold tracking-wider uppercase rounded-xl hover:bg-[#FAF8F4] transition-colors"
           >
             Start WhatsApp Chat
           </a>
@@ -45,7 +45,7 @@ export const WhatsAppButton: React.FC = () => {
       {/* Floating Action Button with 'Chat for Custom Size' Pill */}
       <div className="relative group">
         {/* Floating pill from Natural Tones theme */}
-        <div className="absolute -top-9 right-0 bg-white text-[#111010] px-3 py-1 text-[9px] tracking-widest uppercase font-bold shadow-md whitespace-nowrap rounded-sm border border-[#D8C9AE] pointer-events-none transition-transform group-hover:-translate-y-0.5">
+        <div className="hidden sm:block absolute -top-9 right-0 bg-white text-[#111010] px-3 py-1 text-[9px] tracking-widest uppercase font-bold shadow-md whitespace-nowrap rounded-lg border border-[#D8C9AE] pointer-events-none transition-transform group-hover:-translate-y-0.5">
           Chat for Custom Size
         </div>
 
@@ -54,7 +54,7 @@ export const WhatsAppButton: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           onMouseEnter={() => setShowTooltip(true)}
-          className="w-14 h-14 bg-[#111010] rounded-full flex items-center justify-center shadow-2xl border border-[#B49B73] cursor-pointer hover:scale-106 transition-transform duration-300 active:scale-95"
+          className="w-12 h-12 sm:w-14 sm:h-14 bg-[#111010] rounded-full flex items-center justify-center shadow-2xl border border-[#B49B73] cursor-pointer hover:scale-105 transition-transform duration-300 active:scale-95"
           aria-label="Chat for Custom Size on WhatsApp"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="#F5F1E8">

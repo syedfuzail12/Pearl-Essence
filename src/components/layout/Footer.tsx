@@ -69,17 +69,21 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#3A3733]">
           {/* Brand & Story (Col 1 & 2) */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
+            <button
+              onClick={() => navigateTo('about')}
+              className="flex items-center gap-3 text-left group cursor-pointer focus:outline-hidden"
+              title="About Pearlessence"
+            >
               <PearlessenceLogo variant="badge" size="md" theme="dark" />
               <div className="flex flex-col">
-                <span className="font-manrope text-xl font-black tracking-[0.24em] text-[#F5F1E8] uppercase">
+                <span className="font-manrope text-xl font-black tracking-[0.24em] text-[#F5F1E8] uppercase group-hover:text-[#B49B73] transition-colors">
                   PEARLESSENCE
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.22em] text-[#B49B73] font-bold">
                   Modest • Luxe • Timeless • Soft Elegance
                 </span>
               </div>
-            </div>
+            </button>
 
             <p className="text-xs text-[#D8C9AE] leading-relaxed font-medium max-w-md pt-2">
               {BRAND_DETAILS.story}
