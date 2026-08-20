@@ -75,14 +75,40 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-40 w-full">
-      {/* 1. Slim, Clear Top Announcement Banner */}
-      <div className="bg-[#111010] text-[#FAF8F4] text-[10px] sm:text-xs font-bold tracking-[0.12em] sm:tracking-[0.18em] uppercase py-2 sm:py-2.5 px-3 sm:px-4 text-center border-b border-[#2A2825] transition-colors font-montserrat w-full overflow-hidden">
-        <div className="max-w-7xl mx-auto flex items-center justify-center gap-1.5 sm:gap-2.5">
-          <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#B49B73] shrink-0" />
-          <span className="truncate sm:whitespace-normal">
-            BANGALORE ATELIER • 15-DAY MADE-TO-ORDER BESPOKE • FREE SHIPPING OVER ₹4,999
-          </span>
-          <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#B49B73] shrink-0 hidden sm:inline" />
+      {/* 1. Floating / Smooth Scrolling Top Announcement Ticker */}
+      <div className="bg-[#111010] text-[#FAF8F4] text-[10.5px] sm:text-xs font-bold tracking-[0.16em] uppercase py-2 sm:py-2.5 border-b border-[#2A2825] font-montserrat w-full overflow-hidden select-none">
+        <div className="animate-banner-marquee flex items-center gap-8 whitespace-nowrap">
+          {/* Loop Item 1 */}
+          <div className="flex items-center gap-6">
+            <span className="flex items-center gap-2">
+              <Sparkles className="w-3.5 h-3.5 text-[#B49B73] shrink-0" />
+              <span>BANGALORE ATELIER</span>
+            </span>
+            <span className="text-[#B49B73]">•</span>
+            <span>15-DAY MADE-TO-ORDER BESPOKE TAILORING</span>
+            <span className="text-[#B49B73]">•</span>
+            <span>COMPLIMENTARY SHIPPING OVER ₹4,999</span>
+            <span className="text-[#B49B73]">•</span>
+            <span>WORLDWIDE PREMIUM DELIVERY</span>
+            <span className="text-[#B49B73]">•</span>
+            <span>GULF NIDA &amp; ARMANI CREPE COLLECTION</span>
+          </div>
+
+          {/* Loop Item 2 (Duplicate for Seamless Infinite Floating Scroll) */}
+          <div className="flex items-center gap-6" aria-hidden="true">
+            <span className="flex items-center gap-2">
+              <Sparkles className="w-3.5 h-3.5 text-[#B49B73] shrink-0" />
+              <span>BANGALORE ATELIER</span>
+            </span>
+            <span className="text-[#B49B73]">•</span>
+            <span>15-DAY MADE-TO-ORDER BESPOKE TAILORING</span>
+            <span className="text-[#B49B73]">•</span>
+            <span>COMPLIMENTARY SHIPPING OVER ₹4,999</span>
+            <span className="text-[#B49B73]">•</span>
+            <span>WORLDWIDE PREMIUM DELIVERY</span>
+            <span className="text-[#B49B73]">•</span>
+            <span>GULF NIDA &amp; ARMANI CREPE COLLECTION</span>
+          </div>
         </div>
       </div>
 

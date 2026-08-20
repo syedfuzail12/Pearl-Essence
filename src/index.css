@@ -76,6 +76,25 @@
   }
 }
 
+@keyframes bannerMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-banner-marquee {
+  display: flex;
+  width: max-content;
+  animation: bannerMarquee 28s linear infinite;
+}
+
+.animate-banner-marquee:hover {
+  animation-play-state: paused;
+}
+
 .animate-soft-pulse {
   animation: softPulse 2.8s infinite ease-in-out;
 }
